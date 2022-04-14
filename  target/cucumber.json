@@ -1,0 +1,441 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-09T18:29:40.409Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9130740000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validating place order functionality",
+        "description": "",
+        "id": "validating-pizza-application-functionalities;validating-place-order-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 84442000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 544874000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to pizza application",
+            "match": {
+              "location": "steps.PizzaAppSteps.user_navigates_to_pizza_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 922929000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates pizza order with data",
+            "match": {
+              "location": "steps.PizzaAppSteps.user_creates_pizza_order_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Pizza",
+                  "Small 6 Slices - no toppings"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping 1",
+                  "Mushrooms"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping 2",
+                  "Extra cheese"
+                ]
+              },
+              {
+                "cells": [
+                  "Quantity",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "Patel Harsh"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "patel@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "123456789"
+                ]
+              },
+              {
+                "cells": [
+                  "Payment Type",
+                  "Credit Card"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64360000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user validates that order is created with success message \"Thank you for your order! TOTAL: \" \" Small 6 Slices - no toppings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order! TOTAL: \"",
+                  "offset": 58
+                },
+                {
+                  "val": "\" Small 6 Slices - no toppings\"",
+                  "offset": 94
+                }
+              ],
+              "location": "steps.PizzaAppSteps.user_validates_that_order_is_created_with_success_message(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ONT-7932"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-09T18:29:51.254Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7732277000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validating place order functionality",
+        "description": "",
+        "id": "validating-pizza-application-functionalities;validating-place-order-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 74773000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 474175000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to pizza application",
+            "match": {
+              "location": "steps.PizzaAppSteps.user_navigates_to_pizza_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1042097000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates pizza order with data",
+            "match": {
+              "location": "steps.PizzaAppSteps.user_creates_pizza_order_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Pizza",
+                  "Large 10 Slices - 2 toppings"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping 1",
+                  "Mushrooms"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping 2",
+                  "Extra cheese"
+                ]
+              },
+              {
+                "cells": [
+                  "Quantity",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "John Doe"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "john@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "323451789"
+                ]
+              },
+              {
+                "cells": [
+                  "Payment Type",
+                  "Cash on Pickup"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44776000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user validates that order is created with success message \"Thank you for your order! TOTAL: \" \" Large 10 Slices - 2 toppings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order! TOTAL: \"",
+                  "offset": 58
+                },
+                {
+                  "val": "\" Large 10 Slices - 2 toppings\"",
+                  "offset": 94
+                }
+              ],
+              "location": "steps.PizzaAppSteps.user_validates_that_order_is_created_with_success_message(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ONT-7932"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-09T18:30:00.635Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7461179000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validating place order functionality",
+        "description": "",
+        "id": "validating-pizza-application-functionalities;validating-place-order-functionality;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 75533000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 449875000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to pizza application",
+            "match": {
+              "location": "steps.PizzaAppSteps.user_navigates_to_pizza_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 889040000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates pizza order with data",
+            "match": {
+              "location": "steps.PizzaAppSteps.user_creates_pizza_order_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Pizza",
+                  "Medium 8 Slices - 2 toppings"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping 1",
+                  "Olives"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping 2",
+                  "Salami"
+                ]
+              },
+              {
+                "cells": [
+                  "Quantity",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "Kim Moore"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "kim@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "123456759"
+                ]
+              },
+              {
+                "cells": [
+                  "Payment Type",
+                  "Credit Card"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31558000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user validates that order is created with success message \"Thank you for your order! TOTAL: \" \" Medium 8 Slices - 2 toppings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order! TOTAL: \"",
+                  "offset": 58
+                },
+                {
+                  "val": "\" Medium 8 Slices - 2 toppings\"",
+                  "offset": 94
+                }
+              ],
+              "location": "steps.PizzaAppSteps.user_validates_that_order_is_created_with_success_message(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ONT-7932"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating pizza application functionalities",
+    "description": "",
+    "id": "validating-pizza-application-functionalities",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PizzaAppTests.feature",
+    "tags": [
+      {
+        "name": "@ONT-7932",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
+        }
+      }
+    ]
+  }
+]
