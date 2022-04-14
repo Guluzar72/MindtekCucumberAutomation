@@ -6,7 +6,8 @@ public class Guluzar {
         String name = "Guluzar";
 
         int age =49;
-        double salary = 114.00;
+        boolean hasCar = true;
+        String catName = "Alana";
     }
 
 }
